@@ -98,7 +98,7 @@ yum install -y git
 cd /var/chef/cookbooks
 git clone https://github.com/rtacconi/testhome_cookbook.git testhome
 cd testhome
-berks
+BERKSHELF_PATH=/var/chef/ berks
 chef-solo -c /etc/chef/solo.rb -o testhome
  SHELL
 end
